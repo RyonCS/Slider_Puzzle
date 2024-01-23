@@ -1,0 +1,57 @@
+'''
+Ryon Sajnovsky
+CS 5001, Fall 2022
+Final Project
+A description of my project.
+---- Overview: ----
+
+This was a very fun project. I began designing my code procedurally, but as I got into the weeds of the program, I found
+I was having a difficult time following which functions were returning certain information, and understanding how to
+access this information without having many global variables. A TA suggested I try OO. I was intimidated by this
+idea as we had only covered OO in one module. I decided to give it a try, and it made programming this puzzle much
+easier. I am very happy I programmed using OO because I learned a lot about how classes, methods, and objects interact.
+
+I have tried for the bonus points (+10)! In board.py, you can find the extra code in methods: inversion_list_maker(),
+get_inversion_count(), find_blank_index(), and solvable_puzzle_checker(). These methods are called when the first game
+is run (method: run_puzzle()) and everytime a new puzzle is loaded (method: redraw_loaded_board()). If the puzzle is
+not solvable, a message is shown to the user and the game is reloaded so a new puzzle is shown, until a solvable puzzle
+is provided. Further, I have included a Pyunits test in "test_solvable_puzzle_checker.py.
+
+---- Design: ----
+
+I designed this program using OO. The Tiles class holds information about the puzzle pieces. The Board class does
+everything else and controls all interactions with the puzzle board. My main is very short and is used to initialize
+a Board object, run the puzzle game, and keep the Turtle screen open while the user plays.
+Most of my methods are used to add values to attributes of the board class in __init__.
+
+Again, I have tried for the bonus points (+10).
+
+---- Source Files: ----
+
+I created a custom resources image (unsolvable.gif) that says, " Sorry, puzzle is not solvable. Reloading...".
+It is displayed to the user if the puzzle is not solvable before loading a new puzzle.
+
+---- Instructions for use ----
+
+Please do not click any of the buttons while the board is initializing.
+
+Clicking The load button while the board is initializing will break the program until run again.
+
+Clicking on the reset button while a board is initializing will result in an unsolvable puzzle.
+
+A custom image will be presented to the user if the puzzle is not solvable.
+
+---- Citations/References/Shoutouts ----
+
+I want to give a shoutout to ALL the TA's not only for their help on this project, but for their guidance
+throughout the entire semester. Each of them is incredibly kind and extremely knowledgeable and have made my journey
+through CS 5001 very enjoyable.
+
+Of course, a big shoutout to Professor Bagley for teaching me what I needed to know to create this program and for
+always being enthusiastic about this subject.
+
+Sources used for extra credit:
+https://www.cs.princeton.edu/courses/archive/spring21/cos226/assignments/8puzzle/
+specification.php#:~:text=Thus%2C%20if%20a%20board%20has,inversions%2C%20then%20it%20is%20solvable.
+
+https://webdocs.cs.ualberta.ca/~hayward/396/jem/tile.html
